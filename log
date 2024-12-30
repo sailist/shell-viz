@@ -1,0 +1,603 @@
+test_1686_sgdnn
+run_regression_lite_s3
+release
+build_all
+check_and_clean_builds
+'test_all_pld' -> 'run_timed_cases'
+'run_daily_test' -> 'rebuild_test_single_core'
+'run_regression_bm1684x' -> 'rebuild_backend_lib_cmodel'
+run_sys_tvgen
+run_regression_sg2260
+'xtags' -> 'all_target_sources'
+run_timed_cases
+'all_target_sources' -> 'all_compiled_sources'
+release
+test_cdma_c2c_all
+test_cdma_c2c
+build_sys_tvgen
+check_non_empty_dirs
+'rebuild_firmware_multi_core' -> 'rebuild_all'
+gen_dat
+'all_sources' -> 'find_sources'
+calc_md5
+build_test
+build_tpurt_cmodel
+build_tpurt_cmodel
+build_qemu_backend
+rebuild_firmware_top_sg2262
+quiet_exec
+test_cdma_c2c_r
+run_regression_sg2260
+'traverse_files' -> 'process_file'
+calc_md5
+all_kconfigs
+cmp_dat
+build_bmlib_pcie
+build_cdma_c2c
+exuberant
+'gen_LLaMa_MLP' -> 'new_dir'
+build_all
+'run_regression_sg2262' -> 'rebuild_test'
+'build_bmlib_soc' -> 'install_package'
+test_all_c2c
+test_all_cmodel
+rebuild_firmware_top_sg2260
+read_regs
+run_daily_test
+run_timed_cases
+run_timed_cases_in_args_txt
+build_bmlib_cmodel
+build_tv_gen
+use_pcie_loongarch64
+build_bmlib_pcie
+rebuild_firmware_top_bm1684x
+'rebuild_firmware' -> 'build_openmpi'
+rebuild_firmware_top_mars3
+build_openmpi
+'emacs' -> 'setup_regex'
+rebuild_firmware_top_bm1686
+'all_target_sources' -> 'all_sources'
+build_test
+'build_test' -> 'rebuild_firmware_cmodel'
+build_tpurt_cmodel
+test_tpu_kernel_sample
+'test_tpu_kernel_sample' -> 'use_cmodel'
+rebuild_firmware_multi_core
+run_regression_mars3
+'all_sources' -> 'find_other_sources'
+cmp_dat
+test_all_c2c
+rebuild_tvgen_stargate
+build_bmlib_soc
+test_all_cmodel
+rebuild_firmware_top_sg2260
+build_bmlib_pcie
+use_pcie_loongarch64
+test_tpu_kernel_sample
+run_timed_cases_in_args_txt
+'test_cdma_c2c_r' -> 'build_cdma_c2c'
+test_cdma_c2c_all
+rebuild_firmware_for_palladium
+'rebuild_runtime_soc' -> 'rebuild_bmlib_soc'
+'run_regression_mars3' -> 'rebuild_firmware_for_eda'
+rebuild_firmware_top_bm1686
+cmp_dat
+test_all_pld
+release
+build_qemu_backend
+mars3_build_sys
+docscope
+calc_md5
+rebuild_firmware_top_mars3
+run_regression_mars3
+'test_tpu_kernel_sample' -> 'set_cmodel_firmware'
+rebuild_tvgen_stargate
+cmp_dat
+check_non_empty_dirs
+quiet_exec
+'run_regression_bm1686' -> 'rebuild_test'
+build_bmlib_cmodel
+test_all_c2c
+run_regression_lite_s4
+build_tv_gen
+rebuild_firmware_top_sg2260
+test_all_cmodel
+use_pcie_loongarch64
+run_daily_test
+'run_regression_bm1686' -> 'rebuild_backend_lib_cmodel'
+build_bmlib_soc
+check_non_empty_dirs
+rebuild_firmware_reg_simulation
+'run_regression_sg2380' -> 'rebuild_test'
+test_all_pld
+build_tvgen_dmode
+process_file
+run_regression_mars3
+build_backend_lib_cmodel
+build_qemu_backend_for_sys_test
+rebuild_firmware_top_sg2262
+'rebuild_bmlib_cmodel' -> 'build_bmlib_cmodel'
+run_regression_sg2260
+build_tv_gen
+run_regression_bm1684x
+'build_test' -> 'build_openmpi'
+build_sys_tvgen
+build_samples
+process_bmodel_case
+run_regression_sg2260
+'run_regression_bm1684x' -> 'rebuild_all'
+run_c2c_cases
+'docscope' -> 'all_target_sources'
+build_tvgen
+run_regression_lite_s1
+'build_cdma_c2c' -> 'build_openmpi'
+build_cdma_c2c
+build_qemu_backend
+'run_regression_sg2260' -> 'rebuild_backend_lib_release_cmodel'
+rebuild_test
+test_all_layer
+build_backend_lib_cmodel
+'emacs' -> 'all_target_sources'
+test_all_pld
+test_tpu_kernel_sample
+'traverse_files' -> 'traverse_files'
+'gen_dat' -> 'run_sys_tvgen'
+rebuild_bmlib_soc
+build_sys_tvgen
+build_samples
+test_all_sgdnn
+run_regression_lite_s1
+rebuild_firmware_top_mars3
+rebuild_firmware_top_sg2380
+run_regression_sg2260
+install_package
+test_all_c2c
+'run_regression_bm1684x' -> 'test_tpu_kernel_sample'
+'build_samples' -> 'set_cmodel_firmware'
+test_all_sgdnn
+build_qemu_backend
+'run_regression_mars3' -> 'test_all_tvgen'
+xtags
+'run_regression_sg2262' -> 'rebuild_all'
+test_all_c2c
+run_sys_tvgen
+process_bmodel_case
+run_regression_sg2260
+rebuild_firmware_top_sg2262
+run_sys_tvgen
+rebuild_firmware_top_mars3
+dogtags
+build_tvgen_smode
+run_sys_tvgen
+build_tvgen_mpi
+rebuild_firmware_top_bm1684x
+build_tvgen_mpi
+new_dir
+rebuild_firmware_top_sg2380
+read_regs
+'run_regression_sg2262' -> 'build_sys_tvgen'
+'rebuild_firmware_for_eda' -> 'rebuild_all'
+run_sys_tvgen
+rebuild_test_soc
+build_bmlib_soc
+'run_regression_bm1684x' -> 'rebuild_test'
+run_regression_lite_s2
+'emacs' -> 'all_kconfigs'
+'rebuild_all_soc' -> 'build_all'
+'rebuild_firmware_cmodel_and_tpudnn' -> 'rebuild_firmware_cmodel'
+install_package
+'all_compiled_sources' -> 'all_sources'
+rebuild_firmware_top_bm1686
+release
+rebuild_firmware_top_bm1684x
+rebuild_tpurt_cmodel
+process_bmodel_case
+'run_regression_sg2260' -> 'test_cdma_c2c_r'
+install_package
+'run_regression_bm1686' -> 'rebuild_all'
+build_qemu_backend_for_sys_test
+usage
+build_doc
+set_cmodel_firmware
+run_regression_sg2262
+'run_regression_sg2260' -> 'test_all_tvgen'
+rebuild_firmware_top_bm1686
+rebuild_backend_lib_cmodel
+rebuild_firmware_top_sg2260
+rebuild_firmware_top_sg2262
+rebuild_firmware_for_eda
+build_tpurt_cmodel
+build_model_tool
+build_openmpi
+'build_tv_gen_all' -> 'build_tv_gen'
+rebuild_firmware_cmodel
+'run_regression_sg2380' -> 'rebuild_all'
+rebuild_firmware_top_mars3
+'rebuild_runtime_cmodel' -> 'rebuild_bmlib_cmodel'
+'test_cdma_c2c_r' -> 'test_all_c2c'
+test_tpu_kernel_sample
+'rebuild_firmware_for_palladium' -> 'rebuild_all'
+build_tvgen_dmode
+rebuild_firmware_top_bm1684x
+rebuild_firmware_top_sg2260
+docscope
+'rebuild_test' -> 'build_test'
+'build_tv_gen_all' -> 'build_qemu_backend_for_sys_test'
+'build_runtime_cmodel' -> 'rebuild_runtime_cmodel'
+install_package
+process_bmodel_case
+rebuild_tvgen_stargate
+rebuild_firmware_top_bm1686
+'run_regression_sg2262' -> 'test_all_sgdnn'
+build_qemu_backend_for_sys_test
+'test_all_fast_cmd' -> 'run_timed_cases'
+'build_bmlib_cmodel' -> 'install_package'
+'run_regression_sg2260' -> 'install_package'
+run_regression_sg2262
+rebuild_firmware_for_bringup
+build_bmlib_soc
+run_regression_sg2260
+rebuild_firmware_top_sg2262
+quiet_exec
+build_model_tool
+run_sys_tvgen
+'run_timed_cases' -> 'run_timed_cases_in_args_txt'
+'run_regression_sg2380' -> 'build_sys_tvgen'
+rebuild_firmware_top_sg2260
+'find_sources' -> 'find_arch_sources'
+test_tpu_kernel_sample
+'run_regression_mars3' -> 'rebuild_backend_lib_release_cmodel'
+run_regression_lite_s4
+check_and_clean_builds
+run_sys_tvgen
+build_openmpi
+build_tvgen_smode
+build_bmlib_pcie
+test_all_pld
+test_tpu_kernel_sample
+'run_regression_mars3' -> 'rebuild_firmware_cmodel_and_tpudnn'
+rebuild_firmware_and_tpudnn
+install_package
+run_timed_cases
+build_test
+run_regression_lite_s3
+rebuild_firmware_multi_core
+'run_regression_bm1684x' -> 'test_all_layer'
+rebuild_firmware_top_sg2380
+run_regression_bm1686
+process_bmodel_case
+'run_regression_mars3' -> 'test_all_cmodel'
+run_regression_sg2260
+build_tv_gen
+rebuild_tvgen_stargate
+quiet_exec
+rebuild_firmware_top_sg2262
+run_sys_tvgen
+test_cdma_c2c_all
+new_dir
+rebuild_firmware_top_mars3
+use_soc
+build_samples
+build_backend_lib_cmodel
+build_bmlib_cmodel
+run_regression_lite_s2
+build_tvgen_dmode
+run_regression_sg2380
+build_tv_gen
+rebuild_firmware_for_palladium
+'test_all_layer' -> 'run_timed_cases'
+'run_regression_mars3' -> 'build_model_tool'
+gen_dat
+build_bmlib_soc
+use_pcie_loongarch64
+build_qemu_backend_for_sys_test
+process_bmodel_case
+'run_regression_mars3' -> 'rebuild_backend_lib_cmodel'
+run_regression_bm1686
+'rebuild_firmware_and_tpudnn' -> 'rebuild_firmware'
+rebuild_firmware_top_bm1686
+'rebuild_firmware_cmodel_tvgen' -> 'rebuild_all'
+build_model_tool
+rebuild_firmware_top_mars3
+'rebuild_backend_lib_cmodel' -> 'build_backend_lib_cmodel'
+test_cdma_c2c
+build_bmlib_cmodel
+build_tvgen
+'rebuild_test_single_core' -> 'rebuild_test'
+'run_regression_sg2380' -> 'test_all_sgdnn'
+test_1686_sgdnn
+build_qemu_backend
+test_all_fast_cmd
+'run_regression_bm1686' -> 'test_1686_sgdnn'
+run_sys_tvgen
+run_c2c_cases
+run_regression_sg2380
+setup_regex
+build_tvgen_smode
+run_regression_lite_s0
+'rebuild_test_soc' -> 'rebuild_runtime_soc'
+build_openmpi
+test_1686_sgdnn
+run_regression_lite_s1
+build_runtime_cmodel
+'rebuild_firmware_reg_simulation' -> 'rebuild_firmware'
+release
+rebuild_firmware_top_sg2380
+'check_non_empty_dirs' -> 'check_non_empty_dirs'
+build_qemu_backend
+rebuild_firmware
+run_daily_test
+rebuild_firmware_top_mars3
+build_openmpi
+read_regs
+process_file
+'run_regression_sg2260' -> 'test_all_cmodel'
+build_tvgen_dmode
+rebuild_tvgen_stargate
+release
+run_regression_lite_s0
+build_doc
+rebuild_bmlib_cmodel
+test_all_fast_cmd
+build_test
+gen_LLaMa_MLP
+use_pcie
+'run_regression_mars3' -> 'rebuild_tvgen_stargate'
+build_qemu_backend_for_sys_test
+build_bmlib_pcie
+rebuild_test_soc
+build_openmpi
+mars3_build_sys
+build_doc
+test_all_c2c
+release
+run_regression_sg2260
+build_runtime_cmodel
+build_all
+test_tpu_kernel_sample
+'run_regression_sg2260' -> 'build_model_tool'
+gen_dat
+release
+gen_LLaMa_MLP
+gen_LLaMa_MLP
+build_tv_gen_all
+'run_regression_sg2260' -> 'rebuild_backend_lib_cmodel'
+test_all_layer
+rebuild_firmware_cmodel_and_tpudnn
+'run_daily_test' -> 'rebuild_test'
+gen_dat
+run_regression_lite_s3
+rebuild_tvgen_stargate
+release
+test_all_fast_cmd
+'rebuild_all' -> 'build_all'
+test_all_tvgen
+build_tv_gen
+quiet_exec
+build_qemu_backend_for_sys_test
+'run_regression_mars3' -> 'rebuild_firmware_for_palladium'
+'rebuild_all_bringup' -> 'rebuild_all'
+'run_regression_sg2260' -> 'rebuild_firmware_reg_simulation'
+run_regression_bm1684x
+rebuild_firmware_top_sg2380
+use_cmodel
+rebuild_firmware_top_bm1684x
+test_cdma_c2c_all
+mars3_build_sys
+'release' -> 'rebuild_firmware_and_tpudnn'
+gen_dat
+test_all_sgdnn
+build_tv_gen_all
+'run_regression_bm1684x' -> 'rebuild_firmware_and_tpudnn'
+test_all_layer
+'all_sources' -> 'find_include_sources'
+release
+build_samples
+'rebuild_tpurt_cmodel' -> 'build_tpurt_cmodel'
+'build_test' -> 'build_all'
+'run_regression_bm1684x' -> 'test_all_sgdnn'
+test_all_tvgen
+build_tpurt_cmodel
+all_compiled_sources
+test_all_cmodel
+'rebuild_firmware_for_bringup' -> 'rebuild_all'
+install_package
+run_regression_bm1684x
+rebuild_firmware_top_sg2380
+build_bmlib_pcie
+build_model_tool
+find_other_sources
+build_sys_tvgen
+process_bmodel_case
+'exuberant' -> 'setup_regex'
+build_qemu_backend
+test_all_c2c
+'run_regression_mars3' -> 'rebuild_all'
+test_tpu_kernel_sample
+test_all_cmodel
+test_all_sgdnn
+gen_LLaMa_MLP
+'all_sources' -> 'find_arch_include_sources'
+run_regression_lite_s0
+test_all_layer
+calc_md5
+rebuild_firmware_top_sg2262
+test_cdma_c2c
+'run_regression_sg2262' -> 'rebuild_backend_lib_release_cmodel'
+release
+'build_tv_gen_all' -> 'build_qemu_backend'
+rebuild_tvgen_stargate
+build_samples
+xtags
+process_bmodel_case
+test_tpu_kernel_sample
+release
+'rebuild_bmlib_soc' -> 'build_bmlib_soc'
+rebuild_firmware_top_sg2380
+gen_LLaMa_MLP
+'rebuild_tpurt_cmodel' -> 'check_and_clean_builds'
+use_cmodel
+build_tpurt_cmodel
+rebuild_firmware_for_eda
+'run_regression_sg2262' -> 'test_all_cmodel'
+'run_regression_sg2260' -> 'rebuild_firmware_for_palladium'
+rebuild_firmware_top_bm1686
+rebuild_all
+test_all_sgdnn
+rebuild_backend_lib_cmodel
+quiet_exec
+build_doc
+run_regression_lite_s1
+'all_kconfigs' -> 'find_sources'
+test_all_cmodel
+'run_regression_sg2262' -> 'build_model_tool'
+'build_cdma_c2c' -> 'rebuild_test'
+'xtags' -> 'emacs'
+build_openmpi
+build_openmpi
+'rebuild_test_soc' -> 'build_test'
+build_doc
+'build_backend_lib_release_cmodel' -> 'build_backend_lib_cmodel'
+'run_regression_sg2262' -> 'rebuild_backend_lib_cmodel'
+rebuild_firmware_for_bringup
+build_bmlib_cmodel
+setup_regex
+'xtags' -> 'exuberant'
+emacs
+build_backend_lib_cmodel
+rebuild_tvgen_stargate
+build_openmpi
+build_cdma_c2c
+'run_regression_sg2260' -> 'rebuild_all'
+'run_regression_bm1686' -> 'rebuild_backend_lib_release_cmodel'
+rebuild_firmware_top_mars3
+read_regs
+'run_regression_mars3' -> 'rebuild_test'
+build_all
+build_samples
+run_regression_lite_s2
+build_openmpi
+'all_kconfigs' -> 'find_other_sources'
+find_arch_sources
+test_tpu_kernel_sample
+'build_test_single_core' -> 'build_test'
+find_arch_include_sources
+gen_dat
+'run_regression_bm1686' -> 'test_all_cmodel'
+'run_regression_sg2380' -> 'rebuild_backend_lib_release_cmodel'
+'exuberant' -> 'all_target_sources'
+build_bmlib_soc
+'run_regression_mars3' -> 'test_all_sgdnn'
+test_all_fast_cmd
+new_dir
+build_doc
+'run_regression_sg2260' -> 'build_sys_tvgen'
+test_all_c2c
+run_regression_lite_s2
+'rebuild_firmware_and_tpudnn' -> 'build_runtime_cmodel'
+use_soc
+gen_dat
+run_regression_sg2260
+use_pcie
+find_include_sources
+'run_regression_sg2380' -> 'test_all_cmodel'
+build_sys_tvgen
+gen_LLaMa_MLP
+'run_regression_sg2262' -> 'test_all_tvgen'
+build_openmpi
+mars3_build_sys
+test_tpu_kernel_sample
+build_samples
+gen_dat
+process_bmodel_case
+build_backend_lib_cmodel
+build_backend_lib_cmodel
+rebuild_firmware_top_bm1686
+release
+test_cdma_c2c
+'run_regression_sg2380' -> 'build_model_tool'
+build_tpurt_cmodel
+run_sys_tvgen
+build_tvgen
+'run_c2c_cases' -> 'run_timed_cases_in_args_txt'
+process_bmodel_case
+'run_regression_sg2380' -> 'rebuild_backend_lib_cmodel'
+build_cdma_c2c
+use_cmodel
+use_pcie
+build_tvgen_dmode
+reload_env
+build_all
+'run_regression_sg2260' -> 'quiet_exec'
+release
+test_tpu_kernel_sample
+rebuild_firmware_top_sg2260
+quiet_exec
+test_tpu_kernel_sample
+'run_regression_sg2260' -> 'rebuild_test'
+build_sys_tvgen
+gen_dat
+test_all_tvgen
+build_qemu_backend_for_sys_test
+run_daily_test
+run_regression_bm1684x
+build_tvgen_smode
+'rebuild_runtime_cmodel' -> 'rebuild_tpurt_cmodel'
+test_cdma_c2c
+build_tvgen_mpi
+'run_regression_sg2260' -> 'rebuild_firmware_for_eda'
+test_1686_sgdnn
+rebuild_firmware_top_bm1684x
+test_all_tvgen
+'exuberant' -> 'all_kconfigs'
+'run_regression_sg2260' -> 'test_all_sgdnn'
+rebuild_firmware
+release
+use_cmodel
+'rebuild_test' -> 'build_runtime_cmodel'
+'rebuild_backend_lib_release_cmodel' -> 'rebuild_backend_lib_cmodel'
+xtags
+build_tvgen_smode
+'rebuild_bmlib_cmodel' -> 'check_and_clean_builds'
+build_sys_tvgen
+'test_all_cmodel' -> 'run_timed_cases'
+rebuild_backend_lib_cmodel
+build_backend_lib_cmodel
+rebuild_firmware_top_sg2380
+release
+run_daily_test
+rebuild_test
+gen_LLaMa_MLP
+'run_regression_bm1684x' -> 'rebuild_backend_lib_release_cmodel'
+rebuild_firmware_top_bm1686
+build_tpurt_cmodel
+'run_regression_sg2380' -> 'test_all_tvgen'
+test_1686_sgdnn
+rebuild_bmlib_soc
+run_regression_bm1684x
+build_samples
+build_all
+build_all
+run_sys_tvgen
+'run_regression_bm1686' -> 'rebuild_firmware_for_palladium'
+build_bmlib_cmodel
+calc_md5
+build_openmpi
+build_tv_gen
+'run_regression_bm1684x' -> 'test_all_cmodel'
+test_cdma_c2c_all
+rebuild_firmware_top_sg2260
+'build_tv_gen_all' -> 'build_model_tool'
+rebuild_firmware_top_sg2262
+clean_up
+check_non_empty_dirs
+build_sys_tvgen
+run_regression_lite_s4
+process_bmodel_case
+'rebuild_firmware_cmodel_and_tpudnn' -> 'build_runtime_cmodel'
+run_daily_test
+run_sys_tvgen
+'dogtags' -> 'all_target_sources'
+run_daily_test
+'run_regression_sg2380' -> 'rebuild_firmware_for_palladium'
+gen_dat
